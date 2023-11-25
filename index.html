@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="This is a solution to the IP address tracker challenge on Frontend Mentor">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Frontend Mentor | IP Address Tracker</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <h1 class="heading">IP Address Tracker</h1>
+        <form class="form" id="form" autocomplete="off">
+          <input type="text" id="input-ip" class="form-input" />
+          <button class="form-button" aria-label="Submit">
+            <img src="/icon-arrow.svg" alt="Arrow icon" aria-hidden="true" />
+          </button>
+        </form>
+        <section class="panel">
+          <div class="panel-item">
+            <h2 class="panel-heading">IP Address</h2>
+            <p class="panel-value" id="ip"></p>
+          </div>
+          <div class="panel-item">
+            <h2 class="panel-heading">Location</h2>
+            <p class="panel-value" id="location"></p>
+          </div>
+          <div class="panel-item">
+            <h2 class="panel-heading">Timezone</h2>
+            <p class="panel-value" id="timezone"></p>
+          </div>
+          <div class="panel-item">
+            <h2 class="panel-heading">ISP</h2>
+            <p class="panel-value" id="isp"></p>
+          </div>
+        </section>
+      </div>
+    </header>
+    <main class="main">
+      <div id="map" class="map"></div>
+    </main>
+    <script type="module" src="/src/index.js"></script>
+  </body>
+</html>
